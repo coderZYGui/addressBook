@@ -53,7 +53,7 @@
     
     self.title = @"朝阳通讯录";
     
-//    NSLog(@"%@",NSHomeDirectory());
+    NSLog(@"%@",NSHomeDirectory());
 
 }
 
