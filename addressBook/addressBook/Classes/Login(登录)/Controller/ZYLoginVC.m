@@ -39,6 +39,7 @@
     [self.userNameTextF addTarget:self action:@selector(textChange) forControlEvents:UIControlEventEditingChanged];
     
     [self.pwdTextF addTarget:self action:@selector(textChange) forControlEvents:UIControlEventEditingChanged];
+    
     self.pwdTextF.secureTextEntry = YES;
     
     // 判断是否文本框是否有值
@@ -51,6 +52,8 @@
     [self.bgImageView addSubview:toobar];
     
     self.title = @"朝阳通讯录";
+    
+//    NSLog(@"%@",NSHomeDirectory());
 
 }
 
@@ -86,7 +89,7 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         // 判断账号密码是否正确
-        if ([self.userNameTextF.text isEqualToString:@"罂粟"] && [self.pwdTextF.text isEqualToString:@"guizhaoyang"]) {
+        if ([self.userNameTextF.text isEqualToString:@"ZY"] && [self.pwdTextF.text isEqualToString:@"123"]) {
             
             // 跳转到联系人界面
             ZYContactVC *contactVC = [[ZYContactVC alloc] init];
@@ -113,14 +116,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

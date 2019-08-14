@@ -24,8 +24,8 @@
 		A3C3E5391F6191F2008DAAB6 /* ZYLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3C3E5271F6191F2008DAAB6 /* ZYLoginVC.xib */; };
 		A3C3E53A1F6191F2008DAAB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C3E52C1F6191F2008DAAB6 /* AppDelegate.m */; };
 		A3C3E53B1F6191F2008DAAB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C3E52D1F6191F2008DAAB6 /* main.m */; };
-		A3C3E53F1F619304008DAAB6 /* ar.png in Resources */ = {isa = PBXBuildFile; fileRef = A3C3E53D1F619304008DAAB6 /* ar.png */; };
-		A3C3E5401F619304008DAAB6 /* ar2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3C3E53E1F619304008DAAB6 /* ar2.jpg */; };
+		A3CE5C5322DCBA9C0038CA5A /* ar2.png in Resources */ = {isa = PBXBuildFile; fileRef = A3CE5C5122DCBA9C0038CA5A /* ar2.png */; };
+		A3CE5C5422DCBA9C0038CA5A /* ar.png in Resources */ = {isa = PBXBuildFile; fileRef = A3CE5C5222DCBA9C0038CA5A /* ar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +56,8 @@
 		A3C3E52B1F6191F2008DAAB6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A3C3E52C1F6191F2008DAAB6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A3C3E52D1F6191F2008DAAB6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A3C3E53D1F619304008DAAB6 /* ar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar.png; sourceTree = "<group>"; };
-		A3C3E53E1F619304008DAAB6 /* ar2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ar2.jpg; sourceTree = "<group>"; };
+		A3CE5C5122DCBA9C0038CA5A /* ar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar2.png; sourceTree = "<group>"; };
+		A3CE5C5222DCBA9C0038CA5A /* ar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,8 +292,8 @@
 		A3C3E53C1F619304008DAAB6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				A3C3E53D1F619304008DAAB6 /* ar.png */,
-				A3C3E53E1F619304008DAAB6 /* ar2.jpg */,
+				A3CE5C5222DCBA9C0038CA5A /* ar.png */,
+				A3CE5C5122DCBA9C0038CA5A /* ar2.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -330,6 +330,7 @@
 				TargetAttributes = {
 					A3C3E4C51F617776008DAAB6 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 995KGZDDWF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -339,6 +340,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -357,14 +359,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3CE5C5422DCBA9C0038CA5A /* ar.png in Resources */,
 				A3C3E52F1F6191F2008DAAB6 /* ZYAddContactVC.xib in Resources */,
 				A3C3E4D91F617776008DAAB6 /* LaunchScreen.storyboard in Resources */,
 				A3C3E5311F6191F2008DAAB6 /* ZYContactVC.xib in Resources */,
 				A3C3E5391F6191F2008DAAB6 /* ZYLoginVC.xib in Resources */,
 				A3C3E4D61F617776008DAAB6 /* Assets.xcassets in Resources */,
-				A3C3E5401F619304008DAAB6 /* ar2.jpg in Resources */,
-				A3C3E53F1F619304008DAAB6 /* ar.png in Resources */,
 				A3C3E4D41F617776008DAAB6 /* Main.storyboard in Resources */,
+				A3CE5C5322DCBA9C0038CA5A /* ar2.png in Resources */,
 				A3C3E5341F6191F2008DAAB6 /* ZYEditVC.xib in Resources */,
 				A3C3E5361F6191F2008DAAB6 /* MBProgressHUD.bundle in Resources */,
 			);
@@ -505,7 +507,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 995KGZDDWF;
 				INFOPLIST_FILE = addressBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.addressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,7 +520,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 995KGZDDWF;
 				INFOPLIST_FILE = addressBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunny.addressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
