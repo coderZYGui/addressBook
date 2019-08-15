@@ -13,12 +13,14 @@
 
 @interface ZYContactVC ()<ZYAddContactVCDelegate>
 
+/** 创建联系人数据数组 */
 @property (nonatomic,strong) NSMutableArray *contactDataArr;
 
 @end
 
 @implementation ZYContactVC
 
+/** 懒加载 */
 - (NSMutableArray *)contactDataArr
 {
     if (!_contactDataArr) {

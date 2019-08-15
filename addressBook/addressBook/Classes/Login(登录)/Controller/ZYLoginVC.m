@@ -12,14 +12,19 @@
 
 @interface ZYLoginVC ()
 
+/** 用户名 */
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextF;
 
+/** 密码 */
 @property (weak, nonatomic) IBOutlet UITextField *pwdTextF;
 
+/** 登录按钮 */
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 
+/** 记住密码switch */
 @property (weak, nonatomic) IBOutlet UISwitch *rememberSwitch;
 
+/** 自动登录switch */
 @property (weak, nonatomic) IBOutlet UISwitch *autoSwitch;
 
 /** 背景图片 */
@@ -40,6 +45,7 @@
     
     [self.pwdTextF addTarget:self action:@selector(textChange) forControlEvents:UIControlEventEditingChanged];
     
+    // 密码不直接显示
     self.pwdTextF.secureTextEntry = YES;
     
     // 判断是否文本框是否有值
